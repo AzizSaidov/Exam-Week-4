@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,153 +8,666 @@
     <link rel="stylesheet" href="./output.css">
 </head>
 <body>
-    
-<section>
-    <header class="bg-white py-4 shadow-sm">
-        <div class="container mx-auto px-4 flex justify-between items-center text-sm">
-            <div class="flex items-center space-x-8">
-                <img src="./Q.foto/logo.svg" alt="Logo" class="h-12">
-                <div class="hidden md:block">
-                    <p class="font-bold text-blue-800">8 (495) 926-06-03</p>
-                    <p class=" text-xs text-green-500">Whatsapp</p>
+
+    <section>
+        <header class="bg-white py-4 shadow-sm">
+            <div class="container mx-auto px-4 flex justify-between items-center text-sm">
+                <div class="flex items-center space-x-8">
+                    <img src="./Q.foto/logo.svg" alt="Logo" class="h-12">
+                    <div class="hidden md:block">
+                        <p class="font-bold text-blue-800">8 (495) 926-06-03</p>
+                        <p class=" text-xs text-green-500">Whatsapp</p>
+                    </div>
+                </div>
+                <div class="hidden lg:block text-sm">
+                    <p class="text-gray-500">info@gormedcentre.ru</p>
+                    <p class="text-gray-500">Заказать звонок</p>
+                </div>
+
+                <div class="hidden xl:flex items-center space-x-2 text-sm text-gray-600">
+                    <i class="fas fa-map-marker-alt text-gray-400"></i>
+                    <p>г. Мытищи, <br> ул. Рождественская, д.7</p>
+                </div>
+
+                <div class="hidden md:block text-sm text-gray-600">
+                    <p>Ежедневно</p>
+                    <p class="font-semibold text-blue-900">с 9:00 до 21:00</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="bg-cyan-400 hidden lg:block text-white p-2.5 rounded-md hover:bg-cyan-500">
+                        <img src="./Q.foto/zoom-search.png" alt="">
+                    </button>
+                    <button class="bg-blue-100 text-blue-800 px-4 py-2 hidden lg:block rounded-md font-medium">Личный
+                        кабинет</button>
+                    <img class="lg:hidden block" src="./Q.foto/call.png" alt="">
+                    <img class="lg:hidden block" src="./Q.foto/burger.png" alt="">
                 </div>
             </div>
-        <div class="hidden lg:block text-sm">
-      <p class="text-gray-500">info@gormedcentre.ru</p>
-      <p class="text-gray-500">Заказать звонок</p>
-    </div>
+            <nav class="bg-white border-b border-gray-100 py-3">
+                <div class="container mx-auto px-4 lg:flex hidden items-center justify-between">
 
-    <div class="hidden xl:flex items-center space-x-2 text-sm text-gray-600">
-      <i class="fas fa-map-marker-alt text-gray-400"></i>
-      <p>г. Мытищи, <br> ул. Рождественская, д.7</p>
-    </div>
+                    <ul class="flex items-center space-x-6 text-[14px] font-semibold text-gray-800">
+                        <li class="flex items-center cursor-pointer hover:text-blue-600">
+                            Направления
+                            <svg class="w-4 h-4 ml-1 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </li>
+                        <li class="cursor-pointer hover:text-blue-600">Услуги</li>
+                        <li class="cursor-pointer hover:text-blue-600">Врачи</li>
+                        <li class="cursor-pointer hover:text-blue-600">Отзывы</li>
+                        <li class="cursor-pointer hover:text-blue-600">Акции</li>
+                        <li class="flex items-center cursor-pointer hover:text-blue-600">
+                            О центре
+                            <svg class="w-4 h-4 ml-1 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </li>
+                        <li class="cursor-pointer hover:text-blue-600">Детство</li>
+                        <li class="cursor-pointer hover:text-blue-600">Контакты</li>
+                    </ul>
 
-    <div class="hidden md:block text-sm text-gray-600">
-      <p>Ежедневно</p>
-      <p class="font-semibold text-blue-900">с 9:00 до 21:00</p>
-    </div>
-            <div class="flex items-center space-x-4">
-                <button class="bg-cyan-400 hidden lg:block text-white p-2.5 rounded-md hover:bg-cyan-500">
-        <img src="./Q.foto/zoom-search.png" alt="">
-      </button>
-                <button class="bg-blue-100 text-blue-800 px-4 py-2 hidden lg:block rounded-md font-medium">Личный кабинет</button>
-                <img class="lg:hidden block" src="./Q.foto/call.png" alt="">
-                <img class="lg:hidden block" src="./Q.foto/burger.png" alt="">
+                    <div class="flex items-center space-x-6">
+                        <div class="flex items-center space-x-2 text-gray-500 cursor-pointer hover:text-gray-800">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+                                </path>
+                            </svg>
+                            <span class="text-[12px]">Версия для слабовидящих</span>
+                        </div>
+
+                        <button
+                            class="bg-[#005a8c] hover:bg-[#004a73] text-white px-6 py-2.5 rounded-md text-[14px] font-bold transition duration-300">
+                            Запись на приём
+                        </button>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+
+        <section class="relative bg-linear-to-r from-[#17bad0] to-[#0b8ad9] pt-16 pb-32 overflow-hidden">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 items-center">
+                <div class="text-white z-10">
+                    <h1 class="text-5xl font-bold mb-6 leading-tight">Позаботьтесь <br> о своём здоровье</h1>
+                    <p class="text-lg opacity-90 mb-10 max-w-md">
+                        Осуществляем комплексное медицинское обслуживание населения: консультации и амбулаторное
+                        лечение.
+                    </p>
+                    <button
+                        class="bg-[#16d2cc] hover:bg-cyan-300 text-white px-12 py-4 rounded-md font-bold text-lg shadow-lg transition">
+                        Записаться
+                    </button>
+                </div>
+                <div class="relative flex justify-end">
+                    <img src="./Q.foto/image (14).png" alt="Doctor" class="h-125 object-contain z-10 drop-shadow-2xl">
+                    <div class="absolute -right-20 top-10 w-150 h-150 bg-white/10 rounded-full z-0"></div>
+                </div>
             </div>
+        </section>
+
+        <section class="container mx-auto px-4 -mt-24 relative z-20 pb-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div class="bg-white rounded-xl shadow-2xl p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-800 border-b border-gray-100 pb-4 mb-6">Направления</h3>
+                        <ul class="space-y-4 text-gray-600 font-medium">
+                            <li class="hover:text-cyan-500 cursor-pointer">Акушерство</li>
+                            <li class="hover:text-cyan-500 cursor-pointer">Косметология</li>
+                            <li class="hover:text-cyan-500 cursor-pointer">Хирургия</li>
+                            <li class="hover:text-cyan-500 cursor-pointer">Психотерапия</li>
+                        </ul>
+                    </div>
+                    <button
+                        class="mt-10 w-full bg-[#005a8c] text-white py-3 rounded-lg font-semibold hover:bg-blue-900 transition">Все
+                        услуги</button>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-2xl p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-800 border-b border-gray-100 pb-4 mb-6">Диагностика</h3>
+                        <ul class="space-y-4 text-gray-600 font-medium">
+                            <li class="hover:text-cyan-500 cursor-pointer">MPT</li>
+                            <li class="hover:text-cyan-500 cursor-pointer">КТ</li>
+                            <li class="hover:text-cyan-500 cursor-pointer">УЗИ</li>
+                            <li class="hover:text-cyan-500 cursor-pointer">Рентген</li>
+                        </ul>
+                    </div>
+                    <button
+                        class="mt-10 w-full bg-[#005a8c] text-white py-3 rounded-lg font-semibold hover:bg-blue-900 transition">Вся
+                        диагностика</button>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-2xl p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-800 border-b border-gray-100 pb-4 mb-6">Врачи</h3>
+                        <ul class="space-y-4 text-gray-600 font-medium">
+                            <li class="hover:text-cyan-500 cursor-pointer">Стоматолог</li>
+                            <li class="hover:text-cyan-500 cursor-pointer">Эндокринолог</li>
+                            <li class="hover:text-cyan-500 cursor-pointer">Хирург</li>
+                            <li class="hover:text-cyan-500 cursor-pointer">Терапевт</li>
+                        </ul>
+                    </div>
+                    <button
+                        class="mt-10 w-full bg-[#005a8c] text-white py-3 rounded-lg font-semibold hover:bg-blue-900 transition">Все
+                        врачи</button>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-2xl p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-800 border-b border-gray-100 pb-4 mb-6">Детство</h3>
+                        <ul class="space-y-4 text-gray-600 font-medium">
+                            <li class="hover:text-cyan-500 cursor-pointer">Педиатр</li>
+                            <li class="hover:text-cyan-500 cursor-pointer">Логопед</li>
+                            <li class="hover:text-cyan-500 cursor-pointer">Дерматолог</li>
+                            <li class="hover:text-cyan-500 cursor-pointer">Офтальмолог</li>
+                        </ul>
+                    </div>
+                    <button
+                        class="mt-10 w-full bg-[#005a8c] text-white py-3 rounded-lg font-semibold hover:bg-blue-900 transition">Все
+                        врачи</button>
+                </div>
+
+            </div>
+        </section>
+    </section>
+
+    <section class="font-sans antialiased text-gray-900 bg-gray-50">
+
+        <div class=" bg-gray-100 p-8 flex items-center justify-center">
+            <section class="w-full max-w-6xl mx-auto p-4">
+                <div
+                    class="bg-linear-to-r from-[#00A9C1] to-[#007EB6] rounded-[20px] p-8 md:p-12 text-white shadow-lg">
+
+                    <div class="flex flex-col lg:flex-row justify-between items-start gap-10">
+
+                        <div class="lg:w-1/3">
+                            <h2 class="text-3xl md:text-4xl font-bold mb-4">Записаться на приём</h2>
+                            <p class="text-sm md:text-base opacity-90 font-light max-w-xs">
+                                Оставьте заявку и мы свяжемся с вами в ближайшее время
+                            </p>
+                        </div>
+
+                        <div class="lg:w-2/3 w-full">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                                <div class="relative">
+                                    <select
+                                        class="w-full h-14 px-4 rounded-lg bg-white text-gray-700 appearance-none  text-sm">
+                                        <option>Выберете направление</option>
+                                    </select>
+                                    <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                                        <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <input type="text" placeholder="Ваше имя"
+                                    class="w-full h-14 px-4 rounded-lg bg-white text-gray-700 focus:outline-none text-sm placeholder:text-gray-400">
+
+                                <div class="relative">
+                                    <select
+                                        class="w-full h-14 px-4 rounded-lg bg-white text-gray-700 appearance-none focus:outline-none cursor-pointer text-sm">
+                                        <option>Выберете врача</option>
+                                    </select>
+                                    <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                                        <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <input type="tel" placeholder="Ваш телефон"
+                                    class="w-full h-14 px-4 rounded-lg bg-white text-gray-700 focus:outline-none text-sm placeholder:text-gray-400">
+
+                                <button
+                                    class="w-full h-14 bg-[#00CFBA] hover:bg-[#00b8a5] text-white font-bold rounded-lg transition-colors shadow-md text-sm uppercase tracking-wide">
+                                    Оставить заявку
+                                </button>
+
+                                <div class="flex items-start gap-3 mt-1">
+                                    <input type="checkbox" id="policy"
+                                        class="mt-1 w-4 h-4 rounded border-none text-[#00CFBA] focus:ring-0 cursor-pointer">
+                                    <label for="policy" class="text-[11px] leading-tight opacity-80">
+                                        Отправляя заявку, вы соглашаетесь на нашу
+                                        <a href="#" class="underline block hover:text-white transition-all">политику
+                                            конфиденциальности</a>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
         </div>
-        <nav class="bg-white border-b border-gray-100 py-3">
-  <div class="container mx-auto px-4 lg:flex hidden items-center justify-between">
-    
-    <ul class="flex items-center space-x-6 text-[14px] font-semibold text-gray-800">
-      <li class="flex items-center cursor-pointer hover:text-blue-600">
-        Направления
-        <svg class="w-4 h-4 ml-1 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-      </li>
-      <li class="cursor-pointer hover:text-blue-600">Услуги</li>
-      <li class="cursor-pointer hover:text-blue-600">Врачи</li>
-      <li class="cursor-pointer hover:text-blue-600">Отзывы</li>
-      <li class="cursor-pointer hover:text-blue-600">Акции</li>
-      <li class="flex items-center cursor-pointer hover:text-blue-600">
-        О центре
-        <svg class="w-4 h-4 ml-1 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-      </li>
-      <li class="cursor-pointer hover:text-blue-600">Детство</li>
-      <li class="cursor-pointer hover:text-blue-600">Контакты</li>
-    </ul>
 
-    <div class="flex items-center space-x-6">
-      <div class="flex items-center space-x-2 text-gray-500 cursor-pointer hover:text-gray-800">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
-        </svg>
-        <span class="text-[12px]">Версия для слабовидящих</span>
-      </div>
+        <section class="max-w-6xl mx-auto px-6 py-16">
+            <div class="flex flex-col md:flex-row items-center gap-12 mb-16">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">Немного о нашем медицинском центре</h2>
+                    <div class="space-y-4 text-gray-600 leading-relaxed text-md">
+                        <p>Многопрофильное амбулаторно-поликлиническое учреждение для детей и взрослых в городе
+                            Мытищи...</p>
+                        <p>У нас ежегодно обслуживаются более 150,000 пациентов.</p>
+                    </div>
+                </div>
+                <div class="md:w-1/2 relative">
+                    <img src="./Q.foto/image (15).png" alt="Doctor" class="rounded-lg object-cover">
+                </div>
+            </div>
 
-      <button class="bg-[#005a8c] hover:bg-[#004a73] text-white px-6 py-2.5 rounded-md text-[14px] font-bold transition duration-300">
-        Запись на приём
+            <div
+                class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center bg-gray-50 p-8 rounded-xl border border-gray-100 shadow-sm">
+                <div class="flex flex-col items-center">
+                    <img src="./Q.foto/cross.png" alt="">
+                    <p class="text-3xl py-2 font-black text-blue-900">>10</p>
+                    <p class="text-l text-gray-500 mt-1">лет заботы о вашем здоровье</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="./Q.foto/cross.png" alt="">
+                    <p class="text-3xl py-2 font-black text-blue-900">150</p>
+                    <p class="text-l text-gray-500 mt-1">квалифицированных специалистов</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="./Q.foto/cross.png" alt="">
+                    <p class="text-3xl py-2 font-black text-blue-900">3 000</p>
+                    <p class="text-l text-gray-500 mt-1">медицинских услуг по всем направлениям</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="./Q.foto/cross.png" alt="">
+                    <p class="text-3xl py-2 font-black text-blue-900">День в день</p>
+                    <p class="text-l text-gray-500 mt-1">прием врача любой специальности в день обращения</p>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+<section>
+<section class="max-w-7xl mx-auto px-4 py-12 bg-white font-sans">
+  <div class="flex justify-between items-center mb-8">
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Популярные услуги</h2>
+    <div class="flex gap-2">
+      <button class="w-10 h-10 rounded-full bg-cyan-50 text-cyan-500 flex items-center justify-center hover:bg-cyan-100 transition shadow-sm">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
       </button>
+      <button class="w-10 h-10 rounded-full bg-[#007EB6] text-white flex items-center justify-center hover:bg-blue-700 transition shadow-sm">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="flex overflow-x-auto gap-6 pb-6 snap-x snap-mandatory scrollbar-hide lg:grid lg:grid-cols-4 lg:overflow-x-visible">
+    
+    <div class="min-w-70 sm:min-w-[320px] lg:min-w-full snap-start bg-[#F1F7F9] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 group">
+      <div class="h-48 overflow-hidden">
+        <img src="./Q.foto/image (16).png" alt="MRI" class="w-full h-full object-cover">
+      </div>
+      <div class="p-6 flex flex-col justify-between h-45">
+        <h3 class="text-md font-bold text-gray-800 leading-tight">Томографияи магнитию резонансӣ (МРТ)</h3>
+        <button class="w-full py-3 bg-[#005B8C] text-white rounded-lg font-bold hover:bg-[#004a73] transition-colors">
+          Записаться
+        </button>
+      </div>
+    </div>
+
+    <div class="min-w-70 sm:min-w-[320px] lg:min-w-full snap-start bg-[#F1F7F9] rounded-2xl overflow-hidden shadow-sm group">
+      <div class="h-48 overflow-hidden">
+        <img src="./Q.foto/image (17).png" alt="Gastro" class="w-full h-full object-cover">
+      </div>
+      <div class="p-6 flex flex-col justify-between h-45">
+        <h3 class="text-md font-bold text-gray-800 leading-tight">Гастроскопия</h3>
+        <button class="w-full py-3 bg-[#005B8C] text-white rounded-lg font-bold hover:bg-[#004a73] transition-colors">
+          Записаться
+        </button>
+      </div>
+    </div>
+
+   <div class="min-w-70 sm:min-w-[320px] lg:min-w-full snap-start bg-[#F1F7F9] rounded-2xl overflow-hidden shadow-sm group">
+      <div class="h-48 overflow-hidden">
+        <img src="./Q.foto/image (18).png" alt="Gastro" class="w-full h-full object-cover">
+      </div>
+      <div class="p-6 flex flex-col justify-between h-45">
+        <h3 class="text-md font-bold text-gray-800 leading-tight">Прием гинеколога</h3>
+        <button class="w-full py-3 bg-[#005B8C] text-white rounded-lg font-bold hover:bg-[#004a73] transition-colors">
+          Записаться
+        </button>
+      </div>
+    </div>
+
+    <div class="min-w-70 sm:min-w-[320px] lg:min-w-full snap-start bg-[#F1F7F9] rounded-2xl ">
+      <div class="h-48 overflow-hidden">
+        <img src="./Q.foto/image (19).png" alt="Gastro" class="w-full h-full object-cover">
+      </div>
+      <div class="p-6 flex flex-col justify-between h-45">
+        <h3 class="text-md font-bold text-gray-800 leading-tight">Лабораторная диагностика</h3>
+        <button class="w-full py-3 bg-[#005B8C] text-white rounded-lg font-bold hover:bg-[#004a73] transition-colors">
+          Записаться
+        </button>
+      </div>
     </div>
 
   </div>
-</nav>
-    </header>
+</section>
 
-    <section class="relative bg-linear-to-r from-[#17bad0] to-[#0b8ad9] pt-16 pb-32 overflow-hidden">
-        <div class="container mx-auto px-6 grid md:grid-cols-2 items-center">
-            <div class="text-white z-10">
-                <h1 class="text-5xl font-bold mb-6 leading-tight">Позаботьтесь <br> о своём здоровье</h1>
-                <p class="text-lg opacity-90 mb-10 max-w-md">
-                    Осуществляем комплексное медицинское обслуживание населения: консультации и амбулаторное лечение.
-                </p>
-                <button class="bg-[#16d2cc] hover:bg-cyan-300 text-white px-12 py-4 rounded-md font-bold text-lg shadow-lg transition">
-                    Записаться
-                </button>
-            </div>
-            <div class="relative flex justify-end">
-                <img src="./Q.foto/image (14).png" alt="Doctor" class="h-125 object-contain z-10 drop-shadow-2xl">
-                <div class="absolute -right-20 top-10 w-150 h-150 bg-white/10 rounded-full z-0"></div>
-            </div>
+<section class="max-w-7xl mx-auto px-4 py-12 font-sans bg-gray-50">
+  <h2 class="text-3xl font-bold text-gray-900 mb-8">Акции</h2>
+  
+  <div class="flex overflow-x-auto gap-6 pb-6 snap-x snap-mandatory scrollbar-hide md:grid md:grid-cols-2 md:overflow-x-visible touch-pan-x">
+    
+    <div class="min-w-[85%] md:min-w-full snap-center md:snap-none relative bg-linear-to-r from-[#00A9C1] to-[#007EB6] rounded-[25px] overflow-hidden flex h-62.5 md:h-70 shadow-lg shrink-0">
+      <div class="w-1/2 p-6 md:p-8 flex flex-col justify-between relative z-10 text-white">
+        <span class="inline-block bg-[#67E2D8]/40 backdrop-blur-sm text-[10px] md:text-xs px-3 py-1.5 rounded-full self-start font-medium">
+          то 30 сентябри 2023
+        </span>
+        <div>
+          <h3 class="text-4xl md:text-6xl font-black mb-1">-20%</h3>
+          <p class="text-[12px] md:text-lg leading-snug font-medium opacity-95">барои биоревитализатсияи Hualuform</p>
         </div>
-    </section>
+      </div>
+      
+      <div class="w-1/2 relative">
+        <img src="./Q.foto/image (20).png" alt="Promo 1" class="h-full w-full object-cover">
+        <div class="absolute top-0 left-0 h-full w-16 bg-linear-to-r from-[#00A9C1] to-transparent -translate-x-1"></div>
+      </div>
+    </div>
 
-    <section class="container mx-auto px-4 -mt-24 relative z-20 pb-20">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            
-            <div class="bg-white rounded-xl shadow-2xl p-8 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl font-bold text-slate-800 border-b border-gray-100 pb-4 mb-6">Направления</h3>
-                    <ul class="space-y-4 text-gray-600 font-medium">
-                        <li class="hover:text-cyan-500 cursor-pointer">Акушерство</li>
-                        <li class="hover:text-cyan-500 cursor-pointer">Косметология</li>
-                        <li class="hover:text-cyan-500 cursor-pointer">Хирургия</li>
-                        <li class="hover:text-cyan-500 cursor-pointer">Психотерапия</li>
-                    </ul>
-                </div>
-                <button class="mt-10 w-full bg-[#005a8c] text-white py-3 rounded-lg font-semibold hover:bg-blue-900 transition">Все услуги</button>
-            </div>
-
-            <div class="bg-white rounded-xl shadow-2xl p-8 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl font-bold text-slate-800 border-b border-gray-100 pb-4 mb-6">Диагностика</h3>
-                    <ul class="space-y-4 text-gray-600 font-medium">
-                        <li class="hover:text-cyan-500 cursor-pointer">MPT</li>
-                        <li class="hover:text-cyan-500 cursor-pointer">КТ</li>
-                        <li class="hover:text-cyan-500 cursor-pointer">УЗИ</li>
-                        <li class="hover:text-cyan-500 cursor-pointer">Рентген</li>
-                    </ul>
-                </div>
-                <button class="mt-10 w-full bg-[#005a8c] text-white py-3 rounded-lg font-semibold hover:bg-blue-900 transition">Вся диагностика</button>
-            </div>
-
-            <div class="bg-white rounded-xl shadow-2xl p-8 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl font-bold text-slate-800 border-b border-gray-100 pb-4 mb-6">Врачи</h3>
-                    <ul class="space-y-4 text-gray-600 font-medium">
-                        <li class="hover:text-cyan-500 cursor-pointer">Стоматолог</li>
-                        <li class="hover:text-cyan-500 cursor-pointer">Эндокринолог</li>
-                        <li class="hover:text-cyan-500 cursor-pointer">Хирург</li>
-                        <li class="hover:text-cyan-500 cursor-pointer">Терапевт</li>
-                    </ul>
-                </div>
-                <button class="mt-10 w-full bg-[#005a8c] text-white py-3 rounded-lg font-semibold hover:bg-blue-900 transition">Все врачи</button>
-            </div>
-
-            <div class="bg-white rounded-xl shadow-2xl p-8 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl font-bold text-slate-800 border-b border-gray-100 pb-4 mb-6">Детство</h3>
-                    <ul class="space-y-4 text-gray-600 font-medium">
-                        <li class="hover:text-cyan-500 cursor-pointer">Педиатр</li>
-                        <li class="hover:text-cyan-500 cursor-pointer">Логопед</li>
-                        <li class="hover:text-cyan-500 cursor-pointer">Дерматолог</li>
-                        <li class="hover:text-cyan-500 cursor-pointer">Офтальмолог</li>
-                    </ul>
-                </div>
-                <button class="mt-10 w-full bg-[#005a8c] text-white py-3 rounded-lg font-semibold hover:bg-blue-900 transition">Все врачи</button>
-            </div>
-
+    <div class="min-w-[85%] md:min-w-full snap-center md:snap-none relative bg-linear-to-r from-[#00A9C1] to-[#007EB6] rounded-[25px] overflow-hidden flex h-62.5 md:h-70] shadow-lg shrink-0">
+      <div class="w-1/2 p-6 md:p-8 flex flex-col justify-between relative z-10 text-white">
+        <span class="inline-block bg-[#67E2D8]/40 backdrop-blur-sm text-[10px] md:text-xs px-3 py-1.5 rounded-full self-start font-medium">
+          то 30 сентябри 2023
+        </span>
+        <div>
+          <h3 class="text-4xl md:text-6xl font-black mb-1">-20%</h3>
+          <p class="text-[12px] md:text-lg leading-snug font-medium opacity-95">барои биоревитализатсияи Hualuform</p>
         </div>
-    </section>
+      </div>
+      
+      <div class="w-1/2 relative">
+        <img src="./Q.foto/image (20).png" alt="Promo 2" class="h-full w-full object-cover">
+        <div class="absolute top-0 left-0 h-full w-16 bg-linear-to-r from-[#00A9C1] to-transparent -translate-x-1"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+</section>
+
+<section class="max-w-7xl mx-auto px-4 py-12 bg-white font-sans">
+  <div class="flex justify-between items-center mb-8">
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Врачи медицинского центра</h2>
+    
+    <div class="flex gap-2">
+      <button class="w-10 h-10 rounded-full bg-blue-50 text-blue-500 flex items-center justify-center hover:bg-blue-100 transition shadow-sm">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+      </button>
+      <button class="w-10 h-10 rounded-full bg-[#007EB6] text-white flex items-center justify-center hover:bg-blue-700 transition shadow-sm">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="flex overflow-x-auto gap-6 pb-6 snap-x snap-mandatory scrollbar-hide lg:grid lg:grid-cols-4 lg:overflow-x-visible">
+    
+    <div class="min-w-65 lg:min-w-full snap-start group cursor-pointer">
+      <div class="relative h-80 rounded-xl overflow-hidden mb-4">
+        <img src="./Q.foto/photo.png" alt="Крятов Андрей" class="w-full h-full ">
+      </div>
+      <h3 class="text-lg font-bold text-[#007EB6] mb-1">Крятов Андрей</h3>
+      <p class="text-sm text-gray-500 leading-tight">Главный врач, уролог, андролог</p>
+    </div>
+
+    <div class="min-w-65 lg:min-w-full snap-start group cursor-pointer">
+      <div class="relative h-80 rounded-xl overflow-hidden mb-4">
+        <img src="./Q.foto/photo (2).png" alt="Савина Наталья" class="w-full h-full ">
+      </div>
+      <h3 class="text-lg font-bold text-[#007EB6] mb-1">Савина Наталья</h3>
+      <p class="text-sm text-gray-500 leading-tight">Врач-невролог</p>
+    </div>
+
+    <div class="min-w-65 lg:min-w-full snap-start group cursor-pointer">
+      <div class="relative h-80 rounded-xl overflow-hidden mb-4">
+        <img src="./Q.foto/photo (3).png" alt="Зотова Гюзяль" class="w-full h-full ">
+      </div>
+      <h3 class="text-lg font-bold text-[#007EB6] mb-1">Зотова Гюзяль</h3>
+      <p class="text-sm text-gray-500 leading-tight">Врач-терапевт</p>
+    </div>
+
+    <div class="min-w-65 lg:min-w-full snap-start group cursor-pointer">
+      <div class="relative h-80 rounded-xl overflow-hidden mb-4">
+        <img src="./Q.foto/photo (4).png" alt="Николаева Оксана" class="w-full h-full ">
+      </div>
+      <h3 class="text-lg font-bold text-[#007EB6]  mb-1">Николаева Оксана</h3>
+      <p class="text-sm text-gray-500 leading-tight">Врач-терапевт</p>
+    </div>
+
+  </div>
+
+  <section class="max-w-7xl mx-auto px-4 py-12 bg-white font-sans">
+  <div class="flex justify-between items-center mb-10">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Отзывы пациентов</h2>
+    <div class="flex gap-3">
+      <button class="w-10 h-10 rounded-full bg-blue-50 text-blue-500 flex items-center justify-center hover:bg-blue-100 transition shadow-sm">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+      </button>
+      <button class="w-10 h-10 rounded-full bg-[#007EB6] text-white flex items-center justify-center hover:bg-blue-700 transition shadow-sm">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="flex overflow-x-auto gap-8 pb-8 snap-x snap-mandatory scrollbar-hide md:grid md:grid-cols-2 md:overflow-x-visible">
+    
+    <div class="min-w-75 md:min-w-full snap-start flex flex-col">
+      <div class="mb-4">
+        <h4 class="font-bold text-gray-900 text-lg">Балушкина Татьяна</h4>
+        <p class="text-sm text-gray-400">18 апреля 2022</p>
+      </div>
+      
+      <div class="flex gap-1 mb-4 text-orange-500">
+<img src="./Q.foto/Stars.png" alt="">    
+   </div>
+
+      <p class="text-gray-700 leading-relaxed mb-6 text-sm md:text-base italic">
+        "Попала к Татьяне Ивановне спонтанно. Очень довольна приёмом и проведением ультразвуковой диагностики. Спасибо Наталье Ивановне за внимательное отношение к пациентам! При возникновении проблем теперь только к ней!"
+      </p>
+
+      <button class="self-start px-6 py-2 border border-blue-200 text-blue-500 rounded-lg hover:bg-blue-50 transition mb-4 text-sm font-medium">
+        Подробнее
+      </button>
+
+      <p class="text-sm text-gray-600">Врач: <a href="#" class="text-cyan-500">Савина Наталья Владимировна</a></p>
+    </div>
+
+    <div class="min-w-75 md:min-w-full snap-start flex flex-col border-l-0 md:border-l md:pl-8 border-gray-100">
+      <div class="mb-4">
+        <h4 class="font-bold text-gray-900 text-lg">Трофимов Иван</h4>
+        <p class="text-sm text-gray-400">24 ноября 2021</p>
+      </div>
+      
+      <div class="flex gap-1 mb-4 text-orange-500">
+<img src="./Q.foto/Stars.png" alt="">    
+  </div>
+
+      <p class="text-gray-700 leading-relaxed mb-6 text-sm md:text-base italic">
+        "Огромное спасибо врачу за тщательное обследование. Выявили нехватку витамина Д, проблем с щитовидной, к счастью, не оказалось. Доктор приятная в общении и настоящий профессионал!"
+      </p>
+
+      <button class="self-start px-6 py-2 border border-blue-200 text-blue-500 rounded-lg hover:bg-blue-50 transition mb-4 text-sm font-medium">
+        Подробнее
+      </button>
+
+      <p class="text-sm text-gray-600">Врач: <a href="#" class="text-cyan-500">Крятов Андрей Михайлович</a></p>
+    </div>
+
+  </div>
+</section>
+</section>
+
+<section class="max-w-7xl mx-auto px-4 py-12 bg-white font-sans">
+  <div class="flex justify-between items-center mb-8">
+    <h2 class="text-2xl md:text-4xl font-bold text-gray-900">Технологии и оборудование</h2>
+    
+    <div class="flex gap-2">
+      <button class="w-10 h-10 rounded-full bg-blue-50 text-blue-500 flex items-center justify-center hover:bg-blue-100 transition shadow-sm">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+      </button>
+      <button class="w-10 h-10 rounded-full bg-[#007EB6] text-white flex items-center justify-center hover:bg-blue-700 transition shadow-sm">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="flex overflow-x-auto gap-6 pb-6 snap-x snap-mandatory scrollbar-hide lg:grid lg:grid-cols-3 lg:overflow-x-visible">
+    
+    <div class="min-w-75 lg:min-w-full snap-start bg-[#F1F7F9] rounded-2xl overflow-hidden flex flex-col">
+      <div class="h-58 bg-[#99EBE3] flex items-center justify-center ">
+        <img src="./Q.foto/УЗИ Aplio 400.png" alt="УЗИ Aplio 400" class="max-h-full object-contain">
+      </div>
+      <div class="p-8">
+        <p class="text-xs text-blue-400 font-medium mb-2">УЗИ Аппарат</p>
+        <h3 class="text-2xl font-bold text-[#007EB6] mb-4">УЗИ Aplio 400</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          Аппарат УЗИ экспертного класса, обеспечивающий удивительно четкое изображение, превосходную производительность и эргономичное рабочее место с полностью настраиваемой консолью.
+        </p>
+      </div>
+    </div>
+
+    <div class="min-w-75 lg:min-w-full snap-start bg-[#F1F7F9] rounded-2xl overflow-hidden flex flex-col">
+      <div class="h-58 bg-[#99EBE3] flex items-center justify-center ">
+        <img src="./Q.foto/Колоноскоп Olympus cF-Q150l.png" alt="Olympus cF-Q150L" class="max-h-full object-contain">
+      </div>
+      <div class="p-8">
+        <p class="text-xs text-blue-400 font-medium mb-2">Колоноскоп</p>
+        <h3 class="text-2xl font-bold text-[#007EB6] mb-4">Olympus cF-Q150L</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          Колоновидеоскоп CF-Q150 L предназначен для практического использования с широким диаметром инструментального канала в 3,7 мм и наружным диаметром дистального конца, и вводимой трубки 12,8 мм.
+        </p>
+      </div>
+    </div>
+
+    <div class="min-w-75 lg:min-w-full snap-start bg-[#F1F7F9] rounded-2xl overflow-hidden flex flex-col">
+      <div class="h-58 bg-[#99EBE3] flex items-center justify-center ">
+        <img src="./Q.foto/ПроГраф 5000.png" alt="ПроГраф 5000" class="max-h-full object-contain">
+      </div>
+      <div class="p-8">
+        <p class="text-xs text-blue-400 font-medium mb-2">Рентген-аппарат</p>
+        <h3 class="text-2xl font-bold text-[#007EB6] mb-4">ПроГраф 5000</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          ПроГраф-5000 с конструкцией штатива типа С-дуга предназначен для проведения флюорографического обследования органов грудной клетки пациента в прямой и боковой проекциях.
+        </p>
+      </div>
+    </div>
+</div>
+<div class="py-10 bg-sky-500 p-8 font-sans text-white">
+  <div class="mb-8 flex items-center justify-between">
+    <h2 class="text-2xl md:text-3xl font-bold">Блог от наших специалистов</h2>
+    <button class="rounded-md bg-emerald-400 px-6 py-2 text-sm font-semibold text-white transition hover:bg-emerald-500 shrink-0">
+      Читать все
+    </button>
+  </div>
+
+  <div class="flex overflow-x-auto pb-6 gap-6 snap-x snap-mandatory lg:grid lg:grid-cols-4 lg:overflow-visible">
+    
+    <div class="flex flex-col min-w-70 md:min-w-75 lg:min-w-full snap-start">
+      <div class="mb-4 overflow-hidden rounded-lg">
+        <img src="./Q.foto/Image.png" alt="Doctor" class="h-48 w-full object-cover" />
+      </div>
+
+      <h3 class="mb-2 text-lg font-bold leading-tight">
+        Кто находится в группе риска по глаукоме?
+      </h3>
+      <p class="mb-4 text-sm text-sky-100 line-clamp-3">
+        Глаукома — прогрессирующее заболевание, приводящее к безвозвратной слепоте, в основе кото...
+      </p>
+
+      <div class="mt-auto flex items-center gap-3">
+        <img src="./Q.foto/Image copy.png" alt="Savina Natalia" class="h-10 w-10 rounded-full border-2 border-white/20" />
+        <div class="text-xs">
+          <p class="font-semibold text-white">Савина Наталья</p>
+          <p class="text-sky-200">30 авг. 2023 • 5 минут на чтение</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col min-w-70 md:min-w-75 lg:min-w-full snap-start">
+      <div class="mb-4 overflow-hidden rounded-lg">
+        <img src="./Q.foto/Image.png" alt="Doctor" class="h-48 w-full object-cover" />
+      </div>
+
+      <h3 class="mb-2 text-lg font-bold leading-tight">
+        Кто находится в группе риска по глаукоме?
+      </h3>
+      <p class="mb-4 text-sm text-sky-100 line-clamp-3">
+        Глаукома — прогрессирующее заболевание, приводящее к безвозвратной слепоте, в основе кото...
+      </p>
+
+      <div class="mt-auto flex items-center gap-3">
+        <img src="./Q.foto/Image copy.png" alt="Savina Natalia" class="h-10 w-10 rounded-full border-2 border-white/20" />
+        <div class="text-xs">
+          <p class="font-semibold text-white">Савина Наталья</p>
+          <p class="text-sky-200">30 авг. 2023 • 5 минут на чтение</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col min-w-70 md:min-w-75 lg:min-w-full snap-start">
+      <div class="mb-4 overflow-hidden rounded-lg">
+        <img src="./Q.foto/Image.png" alt="Doctor" class="h-48 w-full object-cover" />
+      </div>
+
+      <h3 class="mb-2 text-lg font-bold leading-tight">
+        Кто находится в группе риска по глаукоме?
+      </h3>
+      <p class="mb-4 text-sm text-sky-100 line-clamp-3">
+        Глаукома — прогрессирующее заболевание, приводящее к безвозвратной слепоте, в основе кото...
+      </p>
+
+      <div class="mt-auto flex items-center gap-3">
+        <img src="./Q.foto/Image copy.png" alt="Savina Natalia" class="h-10 w-10 rounded-full border-2 border-white/20" />
+        <div class="text-xs">
+          <p class="font-semibold text-white">Савина Наталья</p>
+          <p class="text-sky-200">30 авг. 2023 • 5 минут на чтение</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col min-w-70 md:min-w-75 lg:min-w-full snap-start">
+      <div class="mb-4 overflow-hidden rounded-lg">
+        <img src="./Q.foto/Image.png" alt="Doctor" class="h-48 w-full object-cover" />
+      </div>
+
+      <h3 class="mb-2 text-lg font-bold leading-tight">
+        Кто находится в группе риска по глаукоме?
+      </h3>
+      <p class="mb-4 text-sm text-sky-100 line-clamp-3">
+        Глаукома — прогрессирующее заболевание, приводящее к безвозвратной слепоте, в основе кото...
+      </p>
+
+      <div class="mt-auto flex items-center gap-3">
+        <img src="./Q.foto/Image copy.png" alt="Savina Natalia" class="h-10 w-10 rounded-full border-2 border-white/20" />
+        <div class="text-xs">
+          <p class="font-semibold text-white">Савина Наталья</p>
+          <p class="text-sky-200">30 авг. 2023 • 5 минут на чтение</p>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
 </section>
 
 </body>
